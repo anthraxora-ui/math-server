@@ -1,6 +1,9 @@
 import { createServer } from "node:http";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
+// NOTE: Sometimes the import path changes in newer versions. 
+// If this still fails, we will try removing the ".js" extension, 
+// but for now, "type": "module" in package.json usually fixes it.
 import { registerAppTool, registerAppResource } from "@modelcontextprotocol/ext-apps/server";
 import { z } from "zod";
 

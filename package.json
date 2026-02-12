@@ -1,13 +1,14 @@
 {
   "name": "math-server",
   "version": "1.0.0",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^0.6.0",
-    "@modelcontextprotocol/ext-apps": "^0.1.0",
-    "zod": "^3.22.4"
+    "@modelcontextprotocol/sdk": "latest",
+    "@modelcontextprotocol/ext-apps": "latest",
+    "zod": "latest"
   }
 }
